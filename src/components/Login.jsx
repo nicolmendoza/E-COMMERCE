@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Form } from "../style-components/elements/Login";
 import { login } from "./API";
 
+import Swal from "sweetalert2";
+
 const Login = () => {
   const dataInicial = {
     username: "",
@@ -15,13 +17,22 @@ const Login = () => {
 
   const LoginForm = (e) => {
     e.preventDefault();
+console.log('hi')
     login(data)
-      .then((token) => {
-        localStorage.setItem("token", token);
+      .then((response) => {
+        localStorage.setItem("token", response.data.token);
 
         return (window.location.href = "/products");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+      console.log(error)
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: "El nombre o contraseña del ususario son incorrectos",
+
+      })}
+      );
   };
 
   return (

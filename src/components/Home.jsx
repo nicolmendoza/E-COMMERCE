@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 
+import { DivHome } from "../style-components/elements/Home";
 import Products from "./Products";
 import img from '../img/gifShop.gif'
 
@@ -26,20 +26,3 @@ const Home = () => {
 
 export default Home;
 
-const DivHome = styled.div`
-.card{
-  margin-top:1rem
-}
-.card-title{
-  color:black
-}
-.container-text{
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  margin-top:5%;
-  align-items:center;
-
-}
-
-`

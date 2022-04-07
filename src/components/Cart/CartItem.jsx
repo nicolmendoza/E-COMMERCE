@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
-import CartColumns from "./CartColumns.jsx";
+import { DivProductCart } from "../../style-components/elements/CartStyle.js"; 
 import {
   addCart,
   deleteCart,
@@ -80,34 +80,3 @@ const CartItem = ({ products }) => {
 
 export default CartItem;
 
-const DivProductCart = styled.div`
-.div-principal-cart{
-  display:flex ;
-  align-items:center;
- 
-}
-
-
-.btn-black {
-  background: transparent;
-  text-transform: capitalize;
-  font-size: 1rem !important;
-  color: var(--mainOrange);
-  font-weight:bold;
-  border-radius: 0 !important;
-  border: 0.1rem solid var(--mainDark) !important;
-}
-
-.btn-black:hover {
-  background: var(--mainDark) !important;
-  color: white !important;
-}
-  }
-  @media (max-width: 992px) {
- 
-  }
-  @media (max-width: 768px) {
-  }
-  @media (max-width: 576px) {
-  }
-`;

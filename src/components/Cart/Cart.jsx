@@ -14,7 +14,7 @@ import CartTotal from "./CartTotal.jsx";
 const Cart = () => {
   useEffect(() => {}, []);
 
-  const products = useSelector((products) => products.cart);
+  const products = useSelector((products) => products.data);
   console.log(products);
 
   const total = () => {
