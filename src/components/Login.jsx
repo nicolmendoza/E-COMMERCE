@@ -25,14 +25,16 @@ const Login = () => {
   };
 
   return (
-    <>
-      <Form onSubmit={LoginForm}>
+    <div className="mt-20 container">
+      <Form onSubmit={LoginForm} className='container mt-20'>
+        <h4 className="title">Bienenido a E-COMMERCE</h4>
         <label>Nombre: </label>
         <input
           placeholder="Ingrese el nombre del ususario"
           onChange={dataLogin}
           type="text"
           name="username"
+          className="input"
         />
 
         <label>Password: </label>
@@ -41,10 +43,11 @@ const Login = () => {
           onChange={dataLogin}
           type="password"
           name="password"
+          className="input"
         />
-        <button>Ingresar</button>
+        <button className="btn btn-dark btn-black mt-20" > Ingresar</button>
       </Form>
-    </>
+    </div>
   );
 };
 

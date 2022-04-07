@@ -1,23 +1,30 @@
 const cart = [];
 
-const handleCart = (state = cart, action) => {
+const ADDITEM="ADDITEM"
+const DELETEITEM="DELETEITEM"
+
+//reducer
+export const handleCart = (state = cart, action) => {
   const product = action.payload;
   switch (action.type) {
     case "ADDITEM": {
-      const exits = cart.find((x) => x.id === product.id);
-      if (exits)
-        return state.map((x) =>
+      const exits = state.find((x) => x.id === product.id);
+      console.log(exits)
+      if (exits){
+           return state.map((x) =>
           x.id === product.id ? { ...x, qty: x.qty + 1 } : x
         );
-
-      const product = action.payload;
-      return [
+      }else{
+          return [
         ...state,
         {
           ...product,
           qty: 1,
         },
       ];
+      }
+    
+    
     }
     case "DELETEITEM": {
       const exits = state.find((x) => x.id === product.id);
@@ -29,9 +36,33 @@ const handleCart = (state = cart, action) => {
         );
       }
     }
+
+    case "DELETEALL":{
+      return state.filter((x) => x.id !== product.id);
+    }
     default:
-      break;
+      return state;
   }
 };
 
-export default handleCart;
+// acciones
+export const addCart=(product)=>{
+  return{
+      type:"ADDITEM",
+      payload:product
+  }
+}
+
+export const deleteCart=(product)=>{
+  return{
+      type:"DELETEITEM",
+      payload:product
+  }
+}
+
+export const deleteAllCart=(product)=>{
+  return{
+    type:'DELETEALL',
+    payload:product
+  }
+}

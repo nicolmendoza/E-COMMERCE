@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../node_modules/font-awesome/css/font-awesome.min.css";
-import {Link} from 'react-router-dom'
+import { useSelector } from "react-redux";
+import styled from "styled-components";
+
+import { Link } from "react-router-dom";
 const Navbar = () => {
+
+useEffect(()=>{
+
+  console.log(state)
+},[])
+
+  const state = useSelector((state) => state.cart.length);
+  console.log(state)
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm">
+    <>
+
+<div>
+      <NavWrapper className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm w-100">
         <div className="container-fluid">
           <Link className="navbar-brand fw-bold fs-4" to={"/"}>
-            LA COLLECTION
+           E-COMMERCE
           </Link>
           <button
             className="navbar-toggler"
@@ -23,36 +36,43 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 ">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contact
-                </a>
-              </li>
+
             </ul>
             <div className="buttons">
-              <a href="" className="btn btn-outline-dark">
-                <i className="fa fa-sign-in me-1"></i>
-                Login
-              </a>
-              <a href="" className="btn btn-outline-dark">
+
+              <a className="btn btn-outline-dark">
                 <i className="fa fa-user-plus me-1"></i>
-                Register
+                Log Out
               </a>
-              <a href="" className="btn btn-outline-dark">
+              <Link to={"/cart"} className="btn btn-outline-dark">
                 <i className="fa fa-cart me-1"></i>
-                Cart
-              </a>
+                Cart {state}
+              </Link>
             </div>
           </div>
         </div>
-      </nav>
+      </NavWrapper>
     </div>
+
+
+
+
+        
+
+
+    </>
   );
 };
+
+const NavWrapper = styled.nav`
+  font-family: "Spartan", sans-serif !important;
+  color: "var(--mainOrange)" !important;
+  background: #ff6e00 !important;
+  .navbar-brand {
+    color: white !important;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+  }
+`;
 
 export default Navbar;

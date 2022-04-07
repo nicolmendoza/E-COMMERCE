@@ -7,12 +7,15 @@ import Products from "./components/Products";
 import Product from "./components/Product";
 
 import Login from "./components/Login";
-// import {Provider} from 'react-redux'
-// import store from './components/redux/store.js'
+import {Provider} from 'react-redux'
+import {generarStore} from './components/redux/store.js'
+import Cart from "./components/Cart/Cart";
 function App() {
   const token = localStorage.getItem("token");
+  const store=generarStore()
   return (
-    <div className="container">
+    <Provider store={store}>
+        
       <BrowserRouter>
         {/* <Provider store={store}> */}
 
@@ -28,10 +31,16 @@ function App() {
             path={"/products/:id"}
             element={token ? <Product /> : <Login />}
           ></Route>
+                    <Route
+            path={"/cart"}
+            element={token ? <Cart /> : <Login />}
+          ></Route>
         </Routes>
         {/* </Provider> */}
       </BrowserRouter>
-    </div>
+ 
+    </Provider>
+ 
   );
 }
 
