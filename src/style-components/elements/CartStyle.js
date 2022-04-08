@@ -47,10 +47,14 @@ width:90%;
 export const DivTotal = styled.div`
 display:flex;
 justify-content:center;
+
+margin:auto
 button{
-  
-  font-size:15px;
-  padding:10px;
+  font-size:10px;
+  margin:auto;
+}
+h5{
+  font-size:16px;
   margin:auto
 }
 

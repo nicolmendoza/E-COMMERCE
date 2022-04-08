@@ -7,12 +7,21 @@ import { NavWrapper } from "../style-components/elements/NavBar";
 import { Link, Redirect } from "react-router-dom";
 const Navbar = () => {
   const state = useSelector((state) => state.data.length);
-  console.log(state);
+  let total = 0;
+
+  const data = useSelector((state) => {
+    const array = state.data.map((x) => x.qty);
+    console.log(array);
+    for (let i = 0; i < array.length; i++) {total=total+(array[i])};
+
+    return total;
+  });
+
   const token = localStorage.getItem("token");
   const logOut = () => {
-    localStorage.clear()
-    window.reload()
-    window.location.href='/login'
+    localStorage.clear();
+    window.reload();
+    window.location.href = "/login";
   };
 
   return (
@@ -20,12 +29,12 @@ const Navbar = () => {
       <div>
         <NavWrapper className="navbar navbar-expand-lg navbar-light bg-light py-3 shadow-sm w-100">
           <div className="container-fluid">
- 
-
             {token ? (
-              <>           <Link className="navbar-brand fw-bold fs-4" to={"/"}>
-              E-COMMERCE
-            </Link>
+              <>
+                {" "}
+                <Link className="navbar-brand fw-bold fs-4" to={"/"}>
+                  E-COMMERCE
+                </Link>
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -53,15 +62,13 @@ const Navbar = () => {
                     </Link>
                     <Link to={"/cart"} className="btn btn-outline-dark">
                       <i className="fa fa-cart me-1"></i>
-                      Cart {state}
+                      Cart {data}
                     </Link>
                   </div>
                 </div>
               </>
             ) : (
-              <h2 className="navbar-brand fw-bold fs-4" >
-              E-COMMERCE
-            </h2>
+              <h2 className="navbar-brand fw-bold fs-4">E-COMMERCE</h2>
             )}
           </div>
         </NavWrapper>

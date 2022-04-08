@@ -4,13 +4,12 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { DivTotal } from "../../style-components/elements/CartStyle";
-import { deleteAllCart } from "../redux/reducer/handleCart";
+import { deleteCartAll } from "../redux/reducer/handleCart";
 const CartTotal = ({ total }) => {
   const dispatch = useDispatch();
 
-  const deleteAllCart = () => {
-    console.log('hi')
-    dispatch(deleteAllCart());
+  const deleteAllCartFunction = () => {
+    dispatch(deleteCartAll())
   };
 
   return (
@@ -21,10 +20,13 @@ const CartTotal = ({ total }) => {
             <button
               className="btn btn-outline-danger text-uppercase mb-3 px-5"
               type="button"
-              onClick={() => deleteAllCart()}
+              onClick={() => 
+                deleteAllCartFunction()
+              }
             >
               clear cart
             </button>
+
             <h5>
               <span className="text-title">Total:</span>
 

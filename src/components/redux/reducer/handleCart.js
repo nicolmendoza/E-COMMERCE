@@ -43,7 +43,7 @@ export const handleCart = (state = cart, action) => {
       return state.filter((x) => x.id !== product.id);
     }
     case "DELETE": {
-      return state.filter(x=>x===1);
+      return [];
     }
     default:
       return state;
