@@ -12,9 +12,6 @@ const Home = () => {
         <div class="card-img-overlay">
           <div className="container-text">
             <h5 class="card-title display-3">TU E-COMMERCE<i className="fa fa-cart me-1"></i></h5>
-            {/* <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ratione iure! Illum deserunt adipisci natus obcaecati nobis culpa ut vero aperiam impedit pariatur dicta reprehenderit, laborum sint hic perferendis necessitatibus.
-            </p> */}
             <p class="card-text">Last updated 3 mins ago</p>
           </div>
         </div>

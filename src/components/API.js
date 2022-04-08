@@ -10,3 +10,8 @@ export const login = async (data) => {
       return error
   }
 };
+
+export const getAllProducts=async ()=>{
+  const response = await axios.get("https://fakestoreapi.com/products");
+  return response
+} 

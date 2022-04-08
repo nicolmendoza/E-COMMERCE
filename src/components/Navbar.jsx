@@ -6,7 +6,7 @@ import { NavWrapper } from "../style-components/elements/NavBar";
 
 import { Link, Redirect } from "react-router-dom";
 const Navbar = () => {
-  const state = useSelector((state) => state.data.length);
+
   let total = 0;
 
   const data = useSelector((state) => {

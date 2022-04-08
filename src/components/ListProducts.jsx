@@ -13,7 +13,7 @@ const ListProducts = ({ setFilter, setFilterProduct, data, filter }) => {
           className="btn btn-outline-dark"
           onClick={() => setFilter(data)}
         >
-          ALL
+          All
         </button>
         <button
           className="btn btn-outline-dark"

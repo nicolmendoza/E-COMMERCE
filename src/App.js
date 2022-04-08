@@ -12,6 +12,7 @@ import { Provider } from "react-redux";
 import { generarStore } from "./components/redux/store.js";
 import Cart from "./components/Cart/Cart";
 function App() {
+  
   //el store retorna todo lo que estamos conbinando en rootReducer
   const token = localStorage.getItem("token");
   const store = generarStore();

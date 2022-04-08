@@ -43,7 +43,7 @@ console.log('hi')
           <img src={img} width='300px'></img>
         </div>
         
-        <label>Nombre: </label>
+        <label>Username: </label>
         <input
           placeholder="Ingrese el nombre del ususario"
           onChange={dataLogin}
