@@ -42,9 +42,12 @@ Password:83r5^_
 
 </div><br>
 
-<div align=center><img src="./burger-queen/src/img/settingsProductoPrototipo.JPG" width=70%></div>
-<div align=center><img src="./burger-queen/src/img/newOrderPrototipo.JPG" width=70%></div>
-<div align=center><img src="./burger-queen/src/img/ordersCheftPrototipo.JPG" width=70%></div>
+
+<div align=center><img src="https://user-images.githubusercontent.com/87873460/162367400-cb738643-13af-4a49-93c6-cce23cc9167d.png" width=70%></div>
+<div align=center><img src="https://user-images.githubusercontent.com/87873460/162367499-9a93b13b-1566-4f3c-98f2-8f2e3a4549d6.png" width=70%></div>
+<div align=center><img src="https://user-images.githubusercontent.com/87873460/162367608-91916490-ba42-49b5-ae5c-18ff1b771f53.png" width=70%></div>
+<div align=center><img src="https://user-images.githubusercontent.com/87873460/162368039-36ef1377-e512-4cb7-ba6f-a76f54c488b2.png" width=70%></div>
+
 
 ***
 
