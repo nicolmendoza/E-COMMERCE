@@ -1,7 +1,12 @@
 import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import thunk from 'redux-thunk'
 
-import {handleCart,handleProducts } from "./reducer/handleCart.js";
+
+//importamos los reducer
+import {handleCart } from "./reducer/handleCart.js";
+import {handleProducts} from './reducer/handleProduct.js'
+
+
 
 const rootReducer = combineReducers({
   data: handleCart,
@@ -17,3 +22,5 @@ export const generarStore = () => {
   );
   return store;
 };
+
+//el store retorna todo lo que estamos conbinando en rootReducer

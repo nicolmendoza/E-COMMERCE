@@ -15,9 +15,9 @@
 # 1. E-Commerce 🛒📱💻
 ## 1.1. Descripción del proyecto 
 
- ***E-commerce***  es una aplicación responsive diseñada para una tienda online que ofrece diferentes tipos de productos (teconlogía, ropa de mujer, ropa de hombre, joyeria , etc ) en donde podrás selecionar productos, agregarlos, quitarlos al carrito, además de poder visualizar el total de tu compra. 
+ ***E-commerce***  es una aplicación responsive diseñada para una tienda online que ofrece diferentes tipos de productos (teconlogía, ropa de mujer, ropa de hombre, joyeria , etc ) en donde podrás selecionar productos, agregarlos, quitarlos del carrito, además de poder visualizar el total de tu compra , poder iniciar y cerrar sesión. 
 
-Este proyecto es una aplicación web responsive, integrada con una  API, que utiliza React como Librería, Style Component, Bootstarp y SweetAlert para los estilos , desplegado con Firebase Hoisting .
+Este proyecto es una aplicación web responsive, integrada con una  API, que utiliza React como Librería, Styled Component, Bootstrap y SweetAlert para los estilos , desplegado con Firebase Hoisting .
 
 ##  2. Documentación 📝
 
@@ -56,7 +56,7 @@ Password:83r5^_
 # 4. Tecnologias empleadas
   * ✅ React, Redux.
   * ✅ Bootstrap.
-  * ✅ Style Component.
+  * ✅ Styled Component.
   * ✅ Firebase Hoisting.
   * ✅ SweetAlert.
   * ✅ API (FakeStoreApi).
