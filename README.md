@@ -39,7 +39,7 @@ Password:83r5^_
 
 <div align=center><img src="https://user-images.githubusercontent.com/87873460/162352297-fa5450c3-b1e9-4917-91b2-f29318f10d59.png" width=70%></div>
 
-## 3.2 📌 Diseño web y de tablet
+## 3.2 📌 Diseño mobile y  tablet
 
 </div><br>
 
