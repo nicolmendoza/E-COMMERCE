@@ -42,6 +42,9 @@ export const handleCart = (state = cart, action) => {
     case "DELETEALL": {
       return state.filter((x) => x.id !== product.id);
     }
+    case "DELETE": {
+      return state.filter(x=>x===1);
+    }
     default:
       return state;
   }
@@ -71,6 +74,13 @@ export const deleteCart = (product) => {
   return {
     type: "DELETEITEM",
     payload: product,
+  };
+};
+
+export const deleteCartAll = () => {
+  return {
+    type: "DELETE",
+    payload: []
   };
 };
 

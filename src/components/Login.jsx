@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "../style-components/elements/Login";
 import { login } from "./API";
-
+import img from '../img/logo.png'
 import Swal from "sweetalert2";
 
 const Login = () => {
@@ -39,6 +39,10 @@ console.log('hi')
     <div className="mt-20 container">
       <Form onSubmit={LoginForm} className='container mt-20'>
         <h4 className="title">Bienenido a E-COMMERCE</h4>
+        <div className="container">
+          <img src={img} width='300px'></img>
+        </div>
+        
         <label>Nombre: </label>
         <input
           placeholder="Ingrese el nombre del ususario"

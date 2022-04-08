@@ -27,7 +27,7 @@ const CartItem = ({ products }) => {
   return (
     <>
       {products.map((item) => (
-        <DivProductCart>
+        <DivProductCart className="container">
           <div className="row my-2 text-capitalize text-center div-principal-cart">
             <div className="col-10 mx-auto col-lg-2 mt-4">
               <img

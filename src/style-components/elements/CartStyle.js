@@ -7,7 +7,6 @@ export const DivProductCart = styled.div`
  
 }
 
-
 .btn-black {
   background: transparent;
   text-transform: capitalize;
@@ -31,3 +30,28 @@ export const DivProductCart = styled.div`
   @media (max-width: 576px) {
   }
 `;
+
+
+export const DivEmptyCart = styled.div`
+h1{
+  font-family:'Spartan', sans-serif !important;
+}
+`
+
+export const DivColumnCart = styled.div`
+margin:30px auto;
+width:90%;
+
+`
+
+export const DivTotal = styled.div`
+display:flex;
+justify-content:center;
+button{
+  
+  font-size:15px;
+  padding:10px;
+  margin:auto
+}
+
+`

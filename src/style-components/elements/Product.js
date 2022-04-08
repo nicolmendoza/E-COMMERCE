@@ -78,7 +78,7 @@ export const Button = styled.button`
   background: var(--mainOrange) !important;
   color: white;
   border: none;
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-radius: 20px;
   margin: auto;
   width: 100%;

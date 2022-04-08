@@ -23,10 +23,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path={"/"} element={token ? <Home /> : <Login />}></Route>
-          <Route path={"/login"} element={<Login />}></Route>
+          <Route path={"/login"} element={token ? <Home /> : <Login />}></Route>
           <Route
             path={"/products"}
-            element={token ? <Products /> : <Login />}
+            element={token ? <Home/> : <Login />}
           ></Route>
           <Route
             path={"/products/:id"}
