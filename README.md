@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+## Índice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* [1. E-Commerce](#1-e-commerce)
+  - [1.1. Descripción del proyecto](#1.1-descripción-del-proyecto)
+* [2. Documentación](#2-documentación)
+  - [2.1. Instalación](#2.1-instalación)
+* [3. Diseño de la Interfaz](#2-diseño-de-la-interfaz)
+  - [3.1. Prototipo de alta fidelidad](#3.1-prototipo-de-alta-fidelidad)
+  - [3.2. Diseño web y de tablet](#3.2-diseño-web-y-de-tablet)
+* [4. Tecnologias empleadas](#4-recnologias-empleadas)
+* [5. Autores](#5-autores)
 
-## Available Scripts
+***
 
-In the project directory, you can run:
+# 1. E-Commerce 🛒📱💻
+## 1.1. Descripción del proyecto 
+ ***E-commerce***  es una aplicación responsive diseñada para una tienda online que ofrece diferentes tipos de productos (teconlogía, ropa de mujer, ropa de hombre, joyeria , etc ) en donde podrás selecionar productos, agregarlos al carrito de compras o quitarlos de el , además de poder visualizar el total de tu compra. 
 
-### `npm start`
+Este proyecto es una aplicación web responsive, integrada con una  API, que utiliza React como Librería, Style Component, Bootsttarp y SweetAlert para los estilos , desplegado con Firebase Hoisting .
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##  2. Documentación 📝
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+###  2.1 Instalación 🖥
 
-### `npm test`
+* Podrás ingresar a la página mediante este [Link](https://proyecto-promart.web.app/), con las siguientes credenciales:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Username:mor_2314
+Password:83r5^_
+```
 
-### `npm run build`
+***
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 3. Diseño de la interfaz 📱💻
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 3.1 Prototipo de alta fidelidad ✔️
 
-### `npm run eject`
+<div align=center><img src="https://user-images.githubusercontent.com/87873460/162352297-fa5450c3-b1e9-4917-91b2-f29318f10d59.png" width=70%></div>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 3.2 📌 Diseño web y de tablet
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</div><br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<div align=center><img src="./burger-queen/src/img/settingsProductoPrototipo.JPG" width=70%></div>
+<div align=center><img src="./burger-queen/src/img/newOrderPrototipo.JPG" width=70%></div>
+<div align=center><img src="./burger-queen/src/img/ordersCheftPrototipo.JPG" width=70%></div>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+***
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 4. Tecnologias empleadas
+  * ✅ React, Redux.
+  * ✅ Bootstrap.
+  * ✅ Style Component.
+  * ✅ Firebase Hoisting.
+  * ✅ SweetAlert.
+  * ✅ API (FakeStoreApi).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+***
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# 5. Autor 👩‍💻
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Nicol Mendoza](https://github.com/nicolmendoza) <img src="https://cdn-icons-png.flaticon.com/512/2570/2570280.png" width=20px>
